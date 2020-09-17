@@ -9,12 +9,12 @@ const containerElement = React.createElement(
         React.createElement(
             'h1',
             { className: 'greeting__title' },
-            'Hello, World!'
+            'Hello, world!'
         ),
         React.createElement(
             'p',
             { className: 'greeting__text' },
-            'I\`m learing React'
+            'I\`m learning React'
         )
     ]
 )
