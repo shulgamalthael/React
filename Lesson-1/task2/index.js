@@ -21,8 +21,6 @@ const containerElement = React.createElement(
 
 ReactDOM.render(containerElement, rootElement);
 
-ReactDOM.render();
-
 // const rootElement = document.querySelector('#root');
 // 
 // const renderGreeting = elem => {
