@@ -7,12 +7,12 @@ const rootElement = document.querySelector('#root');
 const renderSeconds = time => {
 const seconds = new Date(time).getSeconds();
 const backgroundColor = seconds % 2 === 0
-  ? '#fff'
-  : '#000';
+  ? 'red'
+  : 'black';
 
 const textColor = seconds % 2 !== 0
-  ? '#fff'
-  : '#000';
+  ? 'red'
+  : 'black';
 
 const style = {
   color: textColor,
@@ -33,4 +33,4 @@ const element = (
 
 renderSeconds(new Date());
 
-setInterval(() => renderSeconds(new Date()), 1000);
+setInterval(() => renderSeconds(new Date()), 500);
