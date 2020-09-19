@@ -14,9 +14,14 @@ const textColor = seconds % 2 !== 0
   ? 'red'
   : 'black';
 
+const borderColor = seconds % 2 === 0
+  ? '0.5px solid black'
+  : '0.5px solid red';
+
 const style = {
   color: textColor,
-  backgroundColor
+  backgroundColor,
+  border: borderColor
 }
 
 const element = (
