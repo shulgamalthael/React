@@ -4,12 +4,17 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = (env, argv) => {
+    
     const isProduction = argv.mode === "production";
     const config = {
         entry: "./src/index.jsx",
         output: {
             filename: "bundle.js"
         },
+        output: {
+            filename: '[name].js',
+            path: path.resolve(__dirname, 'review_build')
+          },
         module: {
             rules: [
                 {
