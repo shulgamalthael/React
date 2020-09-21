@@ -11,4 +11,4 @@ const UserInfo = (props) => {
     );
 };
 
-export default UserInfo
+export default UserInfo;
