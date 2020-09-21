@@ -1,8 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.scss";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 
-const rootElement = document.querySelector("#root");
+import Comment from './Comment.jsx';
 
-ReactDOM.render(<App />, rootElement);
+const userInfo = {
+  name: 'Tom',
+  avatarUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVK7xUD2P-8Dqt-CDb1JLDHzE_2yAns-AttA&usqp=CAU'
+}
+
+ReactDOM.render(
+  <Comment 
+    author={userInfo}
+    text="Good Job"
+    date={new Date()}
+  />,
+  document.getElementById('root')
+);
