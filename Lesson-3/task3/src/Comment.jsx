@@ -13,7 +13,7 @@ function Comment(props) {
                 {props.text}
                 </div>
             <div className="comment__date">
-                {formatDate(props.user.date)}
+                {formatDate(props.date)}
             </div>
         </div>
     );
