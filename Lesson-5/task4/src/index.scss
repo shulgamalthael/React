@@ -23,5 +23,9 @@ body {
         border-radius: 8px;
         cursor: pointer;
         outline: none;
+        &:hover {
+            padding: 5px;
+            border: 2px solid black;
+        }
     }
 }
