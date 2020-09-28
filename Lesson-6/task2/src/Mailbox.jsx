@@ -1,23 +1,15 @@
 import React from 'react';
 
-class Mailbox extends React.Component {
-
-    state = {
-        unreadMessages: 2
-    }  
-
-    render() {
-
-        const {unreadMessages} = this.state;
-
-        return(
-            <div className="mailbox">
-                <div className="mailbox__text">Messages
-        {unreadMessages && <div className="mailbox__count">{this.state.unreadMessages}</div>}
-                </div>
-            </div>
-        )
-    }
+const Mailbox = ({ unreadMessages }) => {
+    return(
+        <span className="mailbox">
+            <span className="mailbox__text">Messages
+                {unreadMessages.length > 0 && <span className="mailbox__count">
+                        {unreadMessages.length}
+                    </span>}
+            </span>
+        </span>
+    )
 }
 
 export default Mailbox;
