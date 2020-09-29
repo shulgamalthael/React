@@ -31,7 +31,7 @@ class UserList extends React.Component {
 
         return(
             <div>
-                <button className="btn" onClick={this.toggleSorting}>{this.state.sorting}</button>
+                <button className="btn" onClick={this.toggleSorting}>{this.state.sorting || '-'}</button>
                     <ul className="users">
                         {newUserList.map(user => (<User key={user.id} {...user} />))}
                     </ul>
