@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Pagination = ({ 
-    goPrev, 
-    goNext, 
-    currentPage, 
-    totalItems,
-    itemsPerPage
+const Pagination = ({
+  goPrev,
+  goNext,
+  totalItems,
+  itemsPerPage,
+  currentPage
 }) => {
-    const isPrevPageAvailable = currentPage === 0;
+  const isPrevPageAvailable = currentPage === 0;
   const isNextPageAvailable = (totalItems - itemsPerPage * (currentPage + 1)) > 0;
 
   return (
@@ -19,4 +19,4 @@ const Pagination = ({
   )
 }
 
-export default Pagination;
+export default Pagination
