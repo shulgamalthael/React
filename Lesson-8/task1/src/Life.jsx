@@ -7,7 +7,7 @@ class Life extends Component {
     }
 
     componentDidMount() {
-        console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
+        console.log('componentDidMount: API calls, subscriptions');
     }
 
     componentWillUnmount() {
