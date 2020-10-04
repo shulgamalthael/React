@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UserFrom from './UserForm';
 import './index.scss';
 
+import App from './App.jsx';
+
 ReactDOM.render(
-    <UserFrom onSubmit={this.createUser} />,
-    document.querySelector('#root')
+  <App />,
+  document.getElementById('root')
 );
