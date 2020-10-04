@@ -4,6 +4,6 @@ import UserFrom from './UserForm';
 import './index.scss';
 
 ReactDOM.render(
-    <UserFrom />,
+    <UserFrom onSubmit={this.createUser} />,
     document.querySelector('#root')
 );
