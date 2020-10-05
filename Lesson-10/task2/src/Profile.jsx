@@ -1,12 +1,12 @@
 import React from 'react';
-import UserForm from './UserFrom';
 
-const Profile = ({ userData, handleChange }) => {
-    return(
-        <div className="column">
-            <UserForm userData={userData} handleChange={handleChange} />
-        </div>
-    );
+import UserForm from './UserForm'
+
+const Profile = ({ userData, onChange }) => {
+  return (
+    <div className="column">
+      <UserForm userData={userData} onChange={onChange} />
+    </div>
+  )
 }
-
 export default Profile;
