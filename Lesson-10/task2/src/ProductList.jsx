@@ -10,8 +10,8 @@ class ProductList extends React.Component{
             );
 
     return(
-        <div class="products">
-            <ul class="products__list">
+        <div className="products">
+            <ul className="products__list">
                 {this.props.cartItems.map(({ name, price, id }) => (
                     <li key={id} className="products__list-item">
                         <span className="products__item-name">{name}</span>
@@ -19,7 +19,7 @@ class ProductList extends React.Component{
                     </li>
                 ))}
             </ul>
-            <div class="products__total">{total}</div>
+            <div className="products__total">{total}</div>
         </div>
     );
     }

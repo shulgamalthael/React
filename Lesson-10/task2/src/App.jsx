@@ -5,8 +5,8 @@ import ShoppingCart from './ShoppingCart';
 class App extends React.Component {
     state = {
         userData: {
-            firstName: 'Tom',
-            lastName: 'Form'
+            firstName: 'Nikita',
+            lastName: 'Shulha'
         }
     }
     handleChange = event => {
@@ -22,9 +22,9 @@ class App extends React.Component {
     render() {
 
         return(
-            <div class="page">
-                <h1 class="title">Hello, John Doe</h1>
-                <main class="content">
+            <div className="page">
+                <h1 className="title">Hello, {this.state.userData.firstName}</h1>
+                <main className="content">
                     <ShoppingCart userName={this.state.userData} />
                     <Profile userData={this.state.userData} handleChange={this.handleChange} />
                 </main>

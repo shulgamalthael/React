@@ -3,7 +3,7 @@ import UserForm from './UserFrom';
 
 const Profile = ({ userData, handleChange }) => {
     return(
-        <div class="column">
+        <div className="column">
             <UserForm userData={userData} handleChange={handleChange} />
         </div>
     );
