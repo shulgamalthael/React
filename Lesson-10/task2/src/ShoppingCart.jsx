@@ -10,6 +10,9 @@ class ShoppingCart extends React.Component {
       cartItems: [
         { id: '1', name: 'iPhone 11', price: 999 },
         { id: '2', name: 'iPad Pro', price: 799 },
+        { id: '3', name: 'Apple Watch siries 5', price: 777 },
+        { id: '4', name: 'Air Pods', price: 550 },
+         { id: '5', name: 'MacBook Pro', price: 2000 },
       ]
     }
   }
