@@ -27,7 +27,7 @@ class App extends React.Component {
         return(
             <div class="app">
                 <button class="btn" onClick={this.showDialog}>Show dialog</button>
-                 <Dialog hideDialog={this.hideDialog} isOpen={this.state.isOpen} title="Some text">
+                 <Dialog onClose={this.hideDialog} isOpen={this.state.isOpen} title="Some text">
                     {elem}
                 </Dialog>
             </div>
