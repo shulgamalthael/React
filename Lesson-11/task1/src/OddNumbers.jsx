@@ -1,18 +1,21 @@
 import React from 'react';
 
 class OddNumbers extends React.Component {
-    shouldComponentUpdate(nextProps) {
-        return nextProps.number % 2 === 1;
-    }
+  shouldComponentUpdate(nextProps) {
+    return nextProps.number % 2 === 0
+      ? false
+      : true
+  }
 
-    render() {
+  render() {
+    const { title, number } = this.props
     return (
-        <div class="number">
-            <span class="number__title">{this.props.title}</span>
-            <span class="number__value">{this.props.number}</span>
-        </div>
-    );
-    }
+      <div className="number">
+        <span className="number__title">{title}</span>
+        <span className="number__value">{number}</span>
+      </div>
+    )
+  }
 }
 
-export default OddNumbers;
+export default OddNumbers
