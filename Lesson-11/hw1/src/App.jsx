@@ -1,30 +1,18 @@
 import React from 'react';
 
-import Numbers from './Numbers';
-import OddNumbers from './OddNumbers';
-import EvenNumbers from './EvenNumbers';
+import Expand from './Expand';
 
-class App extends React.Component {
-  state = {
-    number: 0
-  }
-
-  componentDidMount() {
-    this.intervalId = setInterval(() => this.setState({
-      number: this.state.number + 1
-    }), 1000)
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.intervalId)
-  }
+class App extends React.PureComponent {
 
   render() {
     return (
       <div className="app">
-        <Numbers title="All numbers" number={this.state.number} />
-        <EvenNumbers title="All numbers" number={this.state.number} />
-        <OddNumbers title="All numbers" number={this.state.number} />
+        <Expand
+          title='Some title'
+        >
+          <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a
+        class.</p>
+        </Expand>
       </div>
     )
   }
