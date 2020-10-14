@@ -39,4 +39,4 @@ CreateTaskInput.propTypes = {
   handleAddTodo: PropTypes.func.isRequired
 }
 
-export default CreateTaskInput
+export default CreateTaskInput0;
