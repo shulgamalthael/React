@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Product = () => {
+const Product = ({ match }) => {
     return(
-        <div class="product">Product</div>
+    <div class="product">{match.params.productId}</div>
     )
 }
 
