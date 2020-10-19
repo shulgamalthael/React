@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Dimensions from './Dimensions';
+import ConnectionStatus from './ConnectionStatus';
 
 const App = () => (
-  <Dimensions />
+  <ConnectionStatus />
 )
 
 export default App
